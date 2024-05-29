@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to top right, #7c89d5, #f599a5);
+}
+
+.iconStyles {
+  width: 30px;
+  height: 30px;
+  color: #000;
+}

@@ -1,0 +1,34 @@
+{
+    "posts": {
+        "post1": {
+            "autor": "João",
+            "imagem_url": "https://example.com/imagem1.jpg",
+            "data_publicacao": "29 de abril de 2024",
+            "conteudo": "Este é o primeiro post."
+        },
+        "post2": {
+            "autor": "Maria",
+            "imagem_url": "https://example.com/imagem2.jpg",
+            "data_publicacao": "28 de abril de 2024",
+            "conteudo": "Hoje é um dia maravilhoso!"
+        },
+        "post3": {
+            "autor": "Carlos",
+            "imagem_url": "https://example.com/imagem3.jpg",
+            "data_publicacao": "27 de abril de 2024",
+            "conteudo": "Estou animado com o novo projeto que estou trabalhando."
+        },
+        "post4": {
+            "autor": "Ana",
+            "imagem_url": "https://example.com/imagem4.jpg",
+            "data_publicacao": "26 de abril de 2024",
+            "conteudo": "Aprendendo coisas novas todos os dias."
+        },
+        "post5": {
+            "autor": "Pedro",
+            "imagem_url": "https://example.com/imagem5.jpg",
+            "data_publicacao": "25 de abril de 2024",
+            "conteudo": "Feliz aniversário para mim!"
+        }
+    }
+}
