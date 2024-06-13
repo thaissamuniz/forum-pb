@@ -1,3 +1,36 @@
+.error {
+    color: red;
+    margin-bottom: 8px;
+}
+.topic-title {
+    font-weight: bold;
+}
+.topics {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 310px;
+}
+.topic {
+    border: 1px solid #7474d5;
+    border-radius: 5px;
+    padding: 4px;
+    color: #201658;
+    text-align: center;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out ;
+}
+.topic:hover{
+    border-color: pink;
+}
+.topic-active {
+    color: white;
+    font-weight: bold;
+    background-color: #7474d5;
+}
 .post-container {
     display: flex;
     justify-content: center;
@@ -50,4 +83,13 @@ padding-top: 50px;
 .close-icon {
     width: 30px;
     height: 30px;
+    color: black;
+}
+
+@media(min-width: 935px) {
+    .topics {
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }

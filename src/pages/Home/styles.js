@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media (min-width: 855px) {
-    padding-bottom: 0;
+    padding-bottom: 55px;
     position: relative;
   }
 `;

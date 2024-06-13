@@ -7,7 +7,7 @@ import { FormBtn, FormContainer, FormInput, FormTitle } from "../Form/styles";
 import styled from "styled-components";
 import { isAdult } from "../../util";
 
-const baseUrl = "https://forum-51b05-default-rtdb.firebaseio.com/posts.json";
+const baseUrl = "https://forum-51b05-default-rtdb.firebaseio.com/users.json";
 
 export const linkStyles = {
   color: "#201658",
@@ -42,8 +42,10 @@ const RegistrationForm = () => {
     const user = {
       name: values.name,
       email: values.email,
+      imagem_url: "",
       birth: values.birth,
       password: values.password,
+      score: 0,
     };
 
     fetch(baseUrl, {
@@ -62,7 +64,14 @@ const RegistrationForm = () => {
     <FormContainer>
       <FormTitle>Faça parte do nosso fórum</FormTitle>
       <Formik
-        initialValues={{ name: "", email: "", birth: "", password: "" }}
+        initialValues={{
+          name: "",
+          email: "",
+          imagem_url: "",
+          birth: "",
+          password: "",
+          score: 0,
+        }}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >

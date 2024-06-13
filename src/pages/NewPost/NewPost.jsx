@@ -1,10 +1,10 @@
 import Navbar from "../../components/Navbar/Navbar";
-import NewPostt from "../../components/NewPost/NewPost";
+import CreateNewPost from "../../components/NewPost/NewPost";
 
 const NewPost = () => {
   return (
     <div>
-      <NewPostt />
+      <CreateNewPost />
       <Navbar />
     </div>
   );

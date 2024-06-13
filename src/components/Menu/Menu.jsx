@@ -1,23 +1,32 @@
 import { NavLink } from "react-router-dom";
-import User from "../../models/User.js";
 import { Logo, MenuContainer, Search, UserImage } from "./styles";
 import { useState } from "react";
 
-const user = new User("Ma", "maria@email.com", "123456", "06/04/1986");
-console.log(user.getAge());
-
-const Menu = () => {
+const Menu = ({ onFilter }) => {
+  const [search, setSearch] = useState("");
   const [isVisible, setIsVisisble] = useState(false);
+  const user = JSON.parse(localStorage.getItem("user"));
+  const userScore = user ? user.score : 0;
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+    onFilter && onFilter(e.target.value);
+  };
+
   return (
     <MenuContainer>
       <div className="logo-container">
         <Logo>Forum</Logo>
-        <Search type="search" placeholder="o que você procura?" />
+        <Search
+          type="search"
+          placeholder="procure por tópico..."
+          value={search}
+          onChange={handleChange}
+        />
       </div>
       <div className="user-container" onClick={() => setIsVisisble(!isVisible)}>
         <UserImage src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
         <div className="points">
-          <span>15pts</span>
+          <span>{userScore}pts</span>
         </div>
         <div>
           <NavLink

@@ -5,6 +5,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  .error {
+    color: red;
+    margin-bottom: 5px;
+  }
+
+  .navlink {
+    color: #201658;
+  }
 `;
 
 export const FormContainer = styled.div`

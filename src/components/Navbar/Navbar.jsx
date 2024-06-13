@@ -29,9 +29,9 @@ const Navbar = () => {
   return (
     <Nav>
       <ul className="items">
-        {options.map((o, i) => (
-          <NavLink  key={i} to={o.link} style={{}}>
-            <Item>{o.icon}</Item>
+        {options.map((option, i) => (
+          <NavLink key={i} to={option.link} style={{}}>
+            <Item>{option.icon}</Item>
           </NavLink>
         ))}
       </ul>

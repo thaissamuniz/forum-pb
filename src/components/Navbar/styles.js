@@ -18,7 +18,7 @@ export const Nav = styled.nav`
   }
 
   @media(min-width: 855px) {
-    height: 88%;
+    height: 187px;
     top: 100px;
     width: 70px;
     right: 10px;
